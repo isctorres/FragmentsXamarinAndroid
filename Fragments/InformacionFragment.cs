@@ -27,18 +27,29 @@ namespace Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             // Use this to return your custom view for this Fragment
-            View view = inflater.Inflate(Resource.Layout.informacion_fragment, container, false);
-            imgLogo = view.FindViewById<ImageView>(Resource.Id.imgLogo);
-            edtTexto = view.FindViewById<TextView>(Resource.Id.edtTexto);
 
-            return view;
+
             //return base.OnCreateView(inflater, container, savedInstanceState);
+            return inflater.Inflate(Resource.Layout.informacion_fragment, container, false);
         }
 
         public void updateInformacion(string informacion, int logo)
         {
+           
+            imgLogo = Activity.FindViewById<ImageView>(Resource.Id.imgLogo);
+            edtTexto = Activity.FindViewById<TextView>(Resource.Id.edtTexto);
+
             imgLogo.SetImageResource(logo);
             edtTexto.SetText(informacion, TextView.BufferType.Normal);
         }
+
+        public override void OnStart()
+        {
+            base.OnStart();
+
+            if (Arguments != null)
+                updateInformacion(Arguments.GetString("informacion"), Arguments.GetInt("logo"));
+        }
+
     }
 }

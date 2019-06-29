@@ -18,16 +18,22 @@ namespace Fragments
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            HasOptionsMenu = true;
             // Create your fragment here
         }
-
+    
         IEstadoSeleccionado estadoSeleccionado;
         public override void OnAttach(Context context)
         {
             base.OnAttach(context);
             estadoSeleccionado = context as IEstadoSeleccionado;
         }
+
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.menu_from_fragment, menu);
+        }
+
         public override void OnStart()
         {
             base.OnStart();

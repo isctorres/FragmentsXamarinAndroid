@@ -13,9 +13,13 @@ fragment;obj\Debug\90\res\layout\activity_main.xml
 fragments.CiudadesFragment;obj\Debug\90\res\layout\activity_main.xml
 fragments.EstadosFragment;obj\Debug\90\res\layout\activity_main.xml
 fragments.InformacionFragment;obj\Debug\90\res\layout\activity_main.xml
+FrameLayout;obj\Debug\90\res\layout-port\activity_main.xml
 ImageView;obj\Debug\90\res\layout\informacion_fragment.xml
+item;obj\Debug\90\res\menu\menu_from_fragment.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;obj\Debug\90\res\layout\activity_main.xml
+LinearLayout;obj\Debug\90\res\layout\content_detalles_ciudad.xml
+menu;obj\Debug\90\res\menu\menu_from_fragment.xml
 paths;C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\lp\36\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;obj\Debug\90\res\layout\informacion_fragment.xml
 resources;obj\Debug\90\res\values\colors.xml

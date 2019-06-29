@@ -54,10 +54,13 @@ namespace Fragments
         public override void OnStart()
         {
             base.OnStart();
+
+            if (Arguments != null)
+                updateCiudades(Arguments.GetStringArray("ciudades"), Arguments.GetIntArray("logos"), Arguments.GetStringArray("info"));
+
             ListView.ItemClick += (sender, e) => {
                 if (ciudadSeleccionada != null)
                 {
-
                     ciudadSeleccionada.OnCiudadSeleccionada(infoCiudades[e.Position], logosCiudades[e.Position]);
                 }
             };
