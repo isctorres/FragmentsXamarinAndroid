@@ -1274,7 +1274,8 @@ int layout select_dialog_item_material 0x7f040037
 int layout select_dialog_multichoice_material 0x7f040038
 int layout select_dialog_singlechoice_material 0x7f040039
 int layout support_simple_spinner_dropdown_item 0x7f04003a
-int menu menu_from_fragment 0x7f100000
+int menu menu_ciudades 0x7f100000
+int menu menu_from_fragment 0x7f100001
 int mipmap ic_launcher 0x7f030000
 int mipmap ic_launcher_foreground 0x7f030001
 int mipmap ic_launcher_round 0x7f030002

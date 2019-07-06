@@ -4874,7 +4874,8 @@ containing a value of this type.
         public static int support_simple_spinner_dropdown_item=0x7f04003a;
     }
     public static final class menu {
-        public static int menu_from_fragment=0x7f100000;
+        public static int menu_ciudades=0x7f100000;
+        public static int menu_from_fragment=0x7f100001;
     }
     public static final class mipmap {
         public static int ic_launcher=0x7f030000;

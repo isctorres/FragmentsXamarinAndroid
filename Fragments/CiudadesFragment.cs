@@ -28,6 +28,7 @@ namespace Fragments
         public override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            HasOptionsMenu = true;
 
             if (bundle != null)
             {
@@ -36,6 +37,10 @@ namespace Fragments
             // Create your fragment here
         }
 
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.menu_ciudades, menu);
+        }
         public override void OnSaveInstanceState(Bundle outState)
         {
             outState.PutStringArray("CIUDADES",Ciudades);

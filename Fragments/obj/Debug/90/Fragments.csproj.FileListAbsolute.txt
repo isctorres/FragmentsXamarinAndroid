@@ -296,3 +296,5 @@ C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\stamp\_CopyPdbFiles
 C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\Fragments.csprojAssemblyReference.cache
+C:\Users\iscto\source\repos\Fragments\Fragments\obj\Debug\90\res\menu\menu_ciudades.xml

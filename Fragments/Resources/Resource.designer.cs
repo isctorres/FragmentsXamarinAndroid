@@ -4185,7 +4185,10 @@ namespace Fragments
 		{
 			
 			// aapt resource value: 0x7f100000
-			public const int menu_from_fragment = 2131755008;
+			public const int menu_ciudades = 2131755008;
+			
+			// aapt resource value: 0x7f100001
+			public const int menu_from_fragment = 2131755009;
 			
 			static Menu()
 			{
