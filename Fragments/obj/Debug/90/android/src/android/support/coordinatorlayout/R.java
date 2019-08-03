@@ -37,6 +37,10 @@ public final class R {
         public static int mtrl_fab_show_motion_spec=0x7f060007;
         public static int mtrl_fab_transformation_sheet_collapse_spec=0x7f060008;
         public static int mtrl_fab_transformation_sheet_expand_spec=0x7f060009;
+        public static int voltear_a_la_derecha_in=0x7f06000a;
+        public static int voltear_a_la_derecha_out=0x7f06000b;
+        public static int voltear_a_la_izquierda=0x7f06000c;
+        public static int voltear_a_la_izquierda_out=0x7f06000d;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -4805,6 +4809,8 @@ containing a value of this type.
         public static int mtrl_tab_indicator_anim_duration_ms=0x7f0f000c;
         public static int show_password_duration=0x7f0f000d;
         public static int status_bar_notification_info_maxnum=0x7f0f000e;
+        public static int voltear_tarjeta_tiempo_completo=0x7f0f000f;
+        public static int voltear_tarjeta_tiempo_medio=0x7f0f0010;
     }
     public static final class interpolator {
         public static int mtrl_fast_out_linear_in=0x7f070000;
@@ -4844,34 +4850,33 @@ containing a value of this type.
         public static int activity_main=0x7f04001c;
         public static int browser_actions_context_menu_page=0x7f04001d;
         public static int browser_actions_context_menu_row=0x7f04001e;
-        public static int content_detalles_ciudad=0x7f04001f;
-        public static int design_bottom_navigation_item=0x7f040020;
-        public static int design_bottom_sheet_dialog=0x7f040021;
-        public static int design_layout_snackbar=0x7f040022;
-        public static int design_layout_snackbar_include=0x7f040023;
-        public static int design_layout_tab_icon=0x7f040024;
-        public static int design_layout_tab_text=0x7f040025;
-        public static int design_menu_item_action_area=0x7f040026;
-        public static int design_navigation_item=0x7f040027;
-        public static int design_navigation_item_header=0x7f040028;
-        public static int design_navigation_item_separator=0x7f040029;
-        public static int design_navigation_item_subheader=0x7f04002a;
-        public static int design_navigation_menu=0x7f04002b;
-        public static int design_navigation_menu_item=0x7f04002c;
-        public static int design_text_input_password_icon=0x7f04002d;
-        public static int informacion_fragment=0x7f04002e;
-        public static int mtrl_layout_snackbar=0x7f04002f;
-        public static int mtrl_layout_snackbar_include=0x7f040030;
-        public static int notification_action=0x7f040031;
-        public static int notification_action_tombstone=0x7f040032;
-        public static int notification_template_custom_big=0x7f040033;
-        public static int notification_template_icon_group=0x7f040034;
-        public static int notification_template_part_chronometer=0x7f040035;
-        public static int notification_template_part_time=0x7f040036;
-        public static int select_dialog_item_material=0x7f040037;
-        public static int select_dialog_multichoice_material=0x7f040038;
-        public static int select_dialog_singlechoice_material=0x7f040039;
-        public static int support_simple_spinner_dropdown_item=0x7f04003a;
+        public static int design_bottom_navigation_item=0x7f04001f;
+        public static int design_bottom_sheet_dialog=0x7f040020;
+        public static int design_layout_snackbar=0x7f040021;
+        public static int design_layout_snackbar_include=0x7f040022;
+        public static int design_layout_tab_icon=0x7f040023;
+        public static int design_layout_tab_text=0x7f040024;
+        public static int design_menu_item_action_area=0x7f040025;
+        public static int design_navigation_item=0x7f040026;
+        public static int design_navigation_item_header=0x7f040027;
+        public static int design_navigation_item_separator=0x7f040028;
+        public static int design_navigation_item_subheader=0x7f040029;
+        public static int design_navigation_menu=0x7f04002a;
+        public static int design_navigation_menu_item=0x7f04002b;
+        public static int design_text_input_password_icon=0x7f04002c;
+        public static int informacion_fragment=0x7f04002d;
+        public static int mtrl_layout_snackbar=0x7f04002e;
+        public static int mtrl_layout_snackbar_include=0x7f04002f;
+        public static int notification_action=0x7f040030;
+        public static int notification_action_tombstone=0x7f040031;
+        public static int notification_template_custom_big=0x7f040032;
+        public static int notification_template_icon_group=0x7f040033;
+        public static int notification_template_part_chronometer=0x7f040034;
+        public static int notification_template_part_time=0x7f040035;
+        public static int select_dialog_item_material=0x7f040036;
+        public static int select_dialog_multichoice_material=0x7f040037;
+        public static int select_dialog_singlechoice_material=0x7f040038;
+        public static int support_simple_spinner_dropdown_item=0x7f040039;
     }
     public static final class menu {
         public static int menu_ciudades=0x7f100000;

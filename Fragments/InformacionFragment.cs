@@ -30,6 +30,7 @@ namespace Fragments
 
 
             //return base.OnCreateView(inflater, container, savedInstanceState);
+            //return base.OnCreateView(inflater, container, savedInstanceState);
             return inflater.Inflate(Resource.Layout.informacion_fragment, container, false);
         }
 

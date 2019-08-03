@@ -9,22 +9,22 @@
             android:name="fragments.EstadosFragment"
             android:id="@+id/estados"
             android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 			/>
 
         <fragment
             android:name="fragments.CiudadesFragment"
             android:id="@+id/ciudades"
             android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 		<fragment
             android:name="fragments.InformacionFragment"
             android:id="@+id/informacion"
             android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
    
 </LinearLayout>

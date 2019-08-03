@@ -30,7 +30,6 @@ namespace Fragments
                     estados = new EstadosFragment();
                     SupportFragmentManager.BeginTransaction().Add(Resource.Id.contenedorFragment, estados).Commit();
                 }
-
             }
 
             SupportFragmentManager.BackStackChanged += delegate {
@@ -59,9 +58,7 @@ namespace Fragments
 
         public void OnEstadoSeleccionado(string[][] ciudades, int[][] logos, string[][] info, int posicion)
         {
-            //var ciudadesFragment = SupportFragmentManager.FindFragmentById(Resource.Id.ciudades) as CiudadesFragment;
-            //ciudadesFragment.updateCiudades(ciudades[posicion], logos[posicion], info[posicion]);
-
+        
             FrameLayout contenedor = FindViewById<FrameLayout>(Resource.Id.contenedorFragment);
             if (contenedor != null)
             {
@@ -72,7 +69,13 @@ namespace Fragments
 
                 CiudadesFragment ciudadesFragment = new CiudadesFragment();
                 ciudadesFragment.Arguments = args;
-                SupportFragmentManager.BeginTransaction().Replace(Resource.Id.contenedorFragment, ciudadesFragment).AddToBackStack(null).Commit();
+                SupportFragmentManager.BeginTransaction().SetCustomAnimations(
+                     Resource.Animator.voltear_a_la_derecha_in,
+                     Resource.Animator.voltear_a_la_derecha_out,
+                     Resource.Animator.voltear_a_la_izquierda,
+                     Resource.Animator.voltear_a_la_izquierda_out
+                     ).Replace(Resource.Id.contenedorFragment, ciudadesFragment).AddToBackStack(null).Commit();
+
             }
             else
             {
@@ -93,7 +96,8 @@ namespace Fragments
                 args.PutInt("logo", logo);
 
                 InformacionFragment infoCiudad = new InformacionFragment();
-                infoCiudad.Arguments = args; SupportFragmentManager.BeginTransaction().Replace(Resource.Id.contenedorFragment, infoCiudad).AddToBackStack(null).Commit();
+                infoCiudad.Arguments = args;
+                SupportFragmentManager.BeginTransaction().Replace(Resource.Id.contenedorFragment, infoCiudad).SetTransition(Android.Support.V4.App.FragmentTransaction.TransitFragmentOpen).AddToBackStack(null).Commit();
             }
             else
             {

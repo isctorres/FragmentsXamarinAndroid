@@ -39,7 +39,8 @@ namespace Fragments
 
         public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
         {
-            inflater.Inflate(Resource.Menu.menu_ciudades, menu);
+            if(!menu.HasVisibleItems)
+                inflater.Inflate(Resource.Menu.menu_ciudades, menu);
         }
         public override void OnSaveInstanceState(Bundle outState)
         {
@@ -53,6 +54,7 @@ namespace Fragments
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
+            //return inflater.Inflate(Resource.Layout.content_detalles_ciudad, container, false);
             return base.OnCreateView(inflater, container, bundle);
         }
 

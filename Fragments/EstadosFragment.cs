@@ -31,7 +31,8 @@ namespace Fragments
 
         public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
         {
-            inflater.Inflate(Resource.Menu.menu_from_fragment, menu);
+            if( !menu.HasVisibleItems )
+                inflater.Inflate(Resource.Menu.menu_from_fragment, menu);
         }
 
         public override void OnStart()
